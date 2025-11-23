@@ -6,13 +6,20 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 
+
 # ---------------------------
 # Paths
 # ---------------------------
-# Ensure these paths are correct relative to where you run the command
-MODEL_PATH = os.path.join("..", "notebooks", "saved_models", "Logistic_Regression.joblib")
-SCALER_PATH = os.path.join("..", "notebooks", "saved_models", "scaler.joblib")
-FEATURE_ORDER_PATH = os.path.join("..", "notebooks", "saved_models", "feature_order.joblib")
+# Get the absolute path of the directory where app.py is located
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Get the Project Root (go up one level from app/)
+PROJECT_ROOT = os.path.dirname(APP_DIR)
+
+# Construct paths to the models
+MODEL_PATH = os.path.join(PROJECT_ROOT, "notebooks", "saved_models", "Logistic_Regression.joblib")
+SCALER_PATH = os.path.join(PROJECT_ROOT, "notebooks", "saved_models", "scaler.joblib")
+FEATURE_ORDER_PATH = os.path.join(PROJECT_ROOT, "notebooks", "saved_models", "feature_order.joblib")
 
 # ---------------------------
 # Load model, scaler, and feature order
