@@ -72,7 +72,7 @@ Common to both LR & RF:
 ![Box plot showing outliers](app/assets/box.png)
 ![Features histogram](app/assets/hist.png)
 ![Target Distribution](app/assets/target_distribution.png)
-![Logistic Regression Feature Importance] (app/assets/shap.png)
+![Logistic Regression Feature Importance](app/assets/shap.png)
 
 
 ### ⚙️ 5. How to Run
