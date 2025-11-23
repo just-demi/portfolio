@@ -1,9 +1,11 @@
-/.DS_Store
-/.ipynb_checkpoints
+*.DS_Store
+*.ipynb_checkpoints
 __pycache__/
 *.pkl
 *.joblib
 *.parquet
-*.csv
 venv/
 .env
+
+# ignore output data pipeline folder
+out_data_pipeline/
