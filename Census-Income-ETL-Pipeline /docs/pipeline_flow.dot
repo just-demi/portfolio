@@ -1,0 +1,20 @@
+digraph Pipeline {
+    rankdir=LR;
+    node [shape=box, style=filled, color=lightgray];
+
+    RAW[label="Raw CSV (Census)"];
+    JITTER[label="Jitter Expansion\n(Larger simulated dataset)"];
+    DASK[label="Dask Load + Partition"];
+    CLEAN[label="Missing Value Handling"];
+    ENCODE[label="Categorical Encoding\nBinary + One Hot + Frequency"];
+    SCALE[label="Numeric Scaling (MinMax)"];
+    SAVE_CSV[label="Save CSV (csv_out)"];
+    SAVE_PARQUET[label="Save Parquet (parquet)"];
+    MONITOR[label="monitor.py"];
+
+    RAW -> JITTER -> DASK -> CLEAN -> ENCODE -> SCALE;
+    SCALE -> SAVE_CSV;
+    SCALE -> SAVE_PARQUET;
+    SAVE_CSV -> MONITOR;
+    SAVE_PARQUET -> MONITOR;
+}
