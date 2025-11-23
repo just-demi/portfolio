@@ -1,9 +1,10 @@
 *.DS_Store
-*.ipynb_checkpoints
+.ipynb_checkpoints/
 __pycache__/
+.pytest_cache/
 *.pkl
-*.joblib
-*.parquet
+.joblib
+.parquet
 venv/
 .env
 
