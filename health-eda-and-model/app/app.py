@@ -139,7 +139,7 @@ if st.button("Predict"):
     from PIL import Image
 
     def load_image(name):
-        return Image.open(os.path.join("assets", name))
+        return Image.open(os.path.join(PROJECT_ROOT,"app","assets", name))
 
     col1, col2 = st.columns(2)
 
