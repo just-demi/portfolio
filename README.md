@@ -39,11 +39,11 @@ A scalable ETL pipeline engineered using Dask and Parquet, with automated monito
 
 | Domain | Tools |
 |--------|-------|
-| **ML & Modeling** | scikit-learn, SHAP, Logistic Regression, Random Forest |
+| **ML & Modeling** | scikit-learn, Logistic Regression, Random Forest |
 | **Data Engineering** | Dask, PyArrow, Parquet, Graphviz, pytest |
 | **Visualization** | seaborn, matplotlib, Plotly |
 | **Deployment** | Streamlit, bash automation |
-| **Environment Management** | virtualenv, requirements.txt |
+| **Environment Management** | requirements.txt |
 
 ---
 
@@ -51,7 +51,7 @@ A scalable ETL pipeline engineered using Dask and Parquet, with automated monito
 - End-to-end modeling workflows  
 - Production-grade ETL design  
 - Data validation & monitoring  
-- Explainability (SHAP, coefficients)  
+- Explainability  
 - Pipeline orchestration & testing  
 - Streamlit app development  
 - Reproducible research practices  
@@ -63,5 +63,7 @@ A scalable ETL pipeline engineered using Dask and Parquet, with automated monito
 Clone and explore:
 
 ```bash
-git clone <your-repo-url>
-cd <repo>
+git clone https://github.com/just-demi/portfolio
+cd portfolio
+```
+Each project contains its own setup, instructions, and reproducible environment.

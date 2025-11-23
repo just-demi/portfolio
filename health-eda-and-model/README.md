@@ -51,10 +51,10 @@ All features are numeric, and the target variable is binary:
 
 ### ⭐ Best Models
 
-| Model | Test Accuracy | ROC-AUC | Notes |
+| Model | CV Test Accuracy Mean| ROC-AUC | Notes |
 |-------|--------------|----------|-------|
-| **Random Forest** | high-0.8s | ~0.88 | Best overall generalisation |
-| **Logistic Regression** | ~0.82 | ~0.87 | Very interpretable |
+| **Random Forest** | 0.84 | 0.87 | Best overall generalisation |
+| **Logistic Regression** | ~0.83 | ~0.87 | Very interpretable |
 
 ### 🔥 Most Influential Features
 Common to both LR & RF:
@@ -103,6 +103,6 @@ cd app
      - other age groups
     - different hospitals
     - different measurement standards
-- SHAP explainability is limited on very small datasets and linear models.
+- The explainability is limited on very small datasets and linear models.
 
 ⸻
