@@ -54,7 +54,7 @@ All features are numeric, and the target variable is binary:
 | Model | CV Test Accuracy Mean| ROC-AUC | Notes |
 |-------|--------------|----------|-------|
 | **Random Forest** | 0.84 | 0.87 | Best overall generalisation |
-| **Logistic Regression** | ~0.83 | ~0.87 | Very interpretable |
+| **Logistic Regression** | 0.83 | 0.87 | Very interpretable |
 
 ### 🔥 Most Influential Features
 Common to both LR & RF:
